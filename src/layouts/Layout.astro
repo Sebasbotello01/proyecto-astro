@@ -19,59 +19,93 @@ const { title } = Astro.props;
 	<body>
 		<header>
 			<div class="top-header container">
-				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png">
+				<img
+					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
+				/>
 				<div class="input">
 					<input placeholder="escribe algo y encuentra" />
-					<button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-					  </svg>
-					  </button>
+					<button
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+							></path>
+						</svg>
+					</button>
 				</div>
 				<p>publicidad</p>
 			</div>
 		</header>
-		<div class ="banner">
+		<div class="to-60% h-72 bg-gradient-to-b from-[#e2d523] to-[rgb(192, 189, 189)]"></div>
 
+		<div class="gap-[10px] flex -mt-20 h-60 max-h-[1200px] mx-a container">
+			<div class="min-w-44 grow bg-white rounded-[6px]">1</div>
+			<div class="min-w-4 grow bg-white rounded-[6px]">2</div>
+			<div class="min-w-4 grow bg-white rounded-[6px]">3</div>
+			<div class="min-w-4 grow bg-white rounded-[6px]">4</div>
+			<div class="min-w-4 grow bg-white rounded-[6px]">5</div>
+			<div class="min-w-4 grow bg-white rounded-[6px]">6</div>
 		</div>
+		<div
+			class="group transition-colors duration-300 hover:bg-blue-700 hover:cursor-pointer rounded-md inline-flex items-center px-4 py-2 text-white bg-blue-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-1 group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
 
-		<div class="cards container">
-			<div class="card">
-				1
-			</div>
-			<div class="card">
-				2
-			</div>
-			<div class="card">
-				3
-			</div>
-			<div class="card">
-				4
-			</div>
-			<div class="card">
-				5
-			</div>
-			<div class="card">
-				6
-			</div>
+			 Presioname!
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+			</svg>
 		</div>
 		<!-- <slot /> -->
 	</body>
 </html>
 <style>
-	html,body{
+	html,
+	body {
 		padding: 0;
 		margin: 0;
-		background-color: rgb(192, 189, 189) ;
+		background-color: rgb(192, 189, 189);
 	}
-	header{
+	header {
 		height: 80px;
-		background: rgb(238, 222, 5);
+		background:#e2d523;
 		padding-top: 12px;
 	}
-	header img{
+	header img {
 		width: 120px;
 	}
-	header input{
+	header input {
 		box-sizing: border-box;
 		width: 80%;
 		display: inline-block;
@@ -79,44 +113,46 @@ const { title } = Astro.props;
 		border-top-right-radius: 3px;
 		border-bottom-left-radius: 3px;
 		border: none;
-		height:30px;
+		height: 30px;
 		/* border: 1px solid rgb(110, 106, 106); */
 		outline: none;
 	}
-	.header button{
+	header button {
 		display: inline-block;
 		width: 32px;
 		border: none;
 		background: #fff;
 		height: 30px;
 	}
-	.input{
+	.input {
 		display: flex;
 		alaing-items: center;
 	}
-	.banner{
+/*	.banner {
 		height: 280px;
-		background: linear-gradient(to bottom,rgb(238, 222, 5) 60%, rgb(192, 189, 189) 100%);
-	}
-	.container{
+		background: linear-gradient(
+			to bottom,
+			rgb(238, 222, 5) 60%,
+			rgb(192, 189, 189) 100%
+		);
+	}*/
+	.container {
 		max-width: 1200px;
-		margin:0 auto;
+		margin: 0 auto;
 	}
-	.cards{
+	/* .cards {
 		gap: 10px;
 		display: flex;
-		/* column-count: 6; */
-		/* column-gap: ;*/
 		margin-top: -80px;
 		height: 240px;
 	}
-	.card{
-		/* min-width: 180px; */
+	.card {
+		 min-width: 180px;
 		flex-grow: 1;
 		background-color: white;
 		border-radius: 6px;
-	}
-	.top-header{
+	} */
+	.top-header {
 		column-count: 3;
 	}
 </style>
